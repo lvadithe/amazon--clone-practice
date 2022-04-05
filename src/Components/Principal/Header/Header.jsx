@@ -15,7 +15,7 @@ function Header() {
 
         if (user) {
             auth.signOut();
-        } 
+        }
     }
 
     return (
@@ -38,7 +38,7 @@ function Header() {
                 <Link to={!user && './login'} >
                     <div onClick={handleAuthentication} className="header__option">
                         <span className="header__optionLineOne">
-                            Hello 
+                            <p>Hello </p>
                             {
                                 !user ? ' Guest' : user.email
                             }
